@@ -1,0 +1,5 @@
+<resources>
+  <string name="app_name">StateListAnimator</string>
+  <string name="standard_state_list">Standard State List</string>
+  <string name="state_list_animator">State List Animator</string>
+</resources>
