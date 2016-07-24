@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:tools="http://schemas.android.com/tools"
   android:id="@+id/activity_main"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
+  android:orientation="horizontal"
   tools:context="com.stylingandroid.statelistanimator.MainActivity">
 
   <TextView
@@ -15,9 +15,7 @@
     android:layout_marginStart="16dp"
     android:layout_marginTop="16dp"
     android:foreground="@drawable/foreground_selector"
-    android:text="@string/standard_state_list"
-    app:layout_constraintLeft_toLeftOf="@+id/activity_main"
-    app:layout_constraintTop_toTopOf="@+id/activity_main" />
+    android:text="@string/standard_state_list" />
 
   <TextView
     android:id="@+id/textView2"
@@ -25,10 +23,8 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
     android:text="@string/state_list_animator"
-    android:stateListAnimator="@animator/selector_animator"
-    app:layout_constraintBottom_toBottomOf="@+id/textView"
-    app:layout_constraintLeft_toRightOf="@+id/textView"
-    app:layout_constraintTop_toTopOf="@+id/textView" />
+    android:stateListAnimator="@animator/selector_animator" />
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
